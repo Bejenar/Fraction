@@ -41,6 +41,11 @@ public class Fraction {
 		return this.denominator * f.getNumerator() == this.numerator * f.getDenominator(); 
 	}
 	
+	@Override
+	public String toString() {
+		return this.numerator + "/" + this.denominator;
+	}
+	
 	
 	
 }
