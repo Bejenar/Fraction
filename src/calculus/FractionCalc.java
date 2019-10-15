@@ -4,7 +4,7 @@ import bean.Fraction;
 
 public class FractionCalc {
 
-	public static Fraction Add(Fraction a, Fraction b) {
+	public static Fraction add(Fraction a, Fraction b) {
 		int n = 1, m = 1;
 		if (a.getDenominator() == b.getDenominator()) {
 			n = a.getNumerator() + b.getNumerator();
@@ -16,7 +16,7 @@ public class FractionCalc {
 		return new Fraction(n, m);
 	}
 	
-	public static Fraction Subtract(Fraction a, Fraction b) {
+	public static Fraction subtract(Fraction a, Fraction b) {
 		int n = 1, m = 1;
 		if (a.getDenominator() == b.getDenominator()) {
 			n = a.getNumerator() - b.getNumerator();
@@ -28,11 +28,11 @@ public class FractionCalc {
 		return new Fraction(n, m);
 	}
 	
-	public static Fraction Multiply(Fraction a, Fraction b) {
+	public static Fraction multiply(Fraction a, Fraction b) {
 		return new Fraction(a.getNumerator() * b.getNumerator(), a.getDenominator() * b.getDenominator());
 	}
 	
-	public static Fraction Divide(Fraction a, Fraction b) {
+	public static Fraction divide(Fraction a, Fraction b) {
 		return new Fraction(a.getNumerator() * b.getDenominator(), a.getDenominator() * b.getNumerator());
 	}
 	
